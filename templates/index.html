@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Perfil GitHub</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}"/>
 </head>
 <body>
-    <h1>Seu Perfil GitHub</h1>
-    <form name="passdata" action="." method="post">
-        <input type="text" name="user" id="username" size="30">
-        <input type="submit" value="Enviar">
-    </form>
+    <div>
+        <h1>Seu Perfil GitHub</h1>
+        <form name="passdata" action="." method="post">
+            <input type="text" name="user" id="username" size="30">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 </body>
 </html>

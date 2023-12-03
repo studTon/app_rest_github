@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Perfil GitHub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
 </head>
 <body>
-    <h1>Nome: {{ name }}</h2>
-    <h2>Login: {{ login }}</h5>
-    <p>Biografia: {{ bio }}</p>
-    <p>Local: {{ location }}</p>
-    <p>N&#186 de repositórios públicos: {{ repos }}</p>
-    <p>N&#186 de seguidores: {{ followers }}</p>
-    <p>N&#186 de conexões: {{ following }}</p>
+    <div>
+        <h1>Nome: {{ name }}</h2>
+        <h2>Login: {{ login }}</h5>
+        <p>Biografia: {{ bio }}</p>
+        <p>Local: {{ location }}</p>
+        <p>N&#186 de repositórios públicos: {{ repos }}</p>
+        <p>N&#186 de seguidores: {{ followers }}</p>
+        <p>N&#186 de conexões: {{ following }}</p>
+    </div>
 </body>
 </html>

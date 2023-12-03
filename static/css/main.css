@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Helvetica;
+    color: silver;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+div {
+    background-color: #262730;
+}
