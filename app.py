@@ -12,5 +12,5 @@ def index():
 def get_username():
     '''Profile page.'''
     user = request.form['user']
-
-    return render_template("pass.html", dado=user)
+    resposta = requests.request("GET",f'https://api.github.com/users/{user}',data='json', timeout=10)
+    return render_template("pass.html", dado=resposta.text)
