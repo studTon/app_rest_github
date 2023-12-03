@@ -1,6 +1,6 @@
 """Aplicação para visualização de perfil GitHub"""
 from flask import Flask, render_template, request
-import requests
+import requests, json, pprint
 
 app = Flask(__name__)
 
@@ -12,5 +12,7 @@ def index():
 def get_username():
     '''Profile page.'''
     user = request.form['user']
-    resposta = requests.request("GET",f'https://api.github.com/users/{user}',data='json', timeout=10)
-    return render_template("pass.html", dado=resposta.text)
+    resposta = requests.get(f'https://api.github.com/users/{user}',headers={'Accept': 'application/json'},timeout=10)
+    body = resposta.json()
+
+    return render_template("pass.html", dado=body)
