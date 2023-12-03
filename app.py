@@ -31,7 +31,7 @@ def get_username():
     n_conexoes = body['following']
 
     return render_template("pass.html", 
-                           name=nome,
+                           realName=nome,
                            login=conta,
                            bio=biografia,
                            location=local,
