@@ -22,7 +22,7 @@ def get_username():
         headers={'Accept': 'application/json'},
         timeout=10)
     body = json.loads(resposta.text)
-    nome = body['name']
+    #nome = body['name']
     conta = body['login']
     biografia = body['bio']
     local = body['location']
@@ -31,7 +31,7 @@ def get_username():
     n_conexoes = body['following']
 
     return render_template("pass.html", 
-                           realName=nome,
+                           #realName=nome,
                            login=conta,
                            bio=biografia,
                            location=local,
