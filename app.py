@@ -1,6 +1,8 @@
 """Aplicação para visualização de perfil GitHub"""
+import json
+import requests
 from flask import Flask, render_template, request
-import requests, json, pprint
+
 
 app = Flask(__name__)
 
