@@ -13,4 +13,5 @@ Introduza o nome de usuário do GitHub no espaço para enviar a requisição.
 Pronto! Algumas informações básicas sobre o perfil.
 
 Autor: Everton da Silva
+
 Realizado para finalidade educacional para a disciplina de Integração de aplicações no curso de Análise e Desenvolvimento de Sistemas na Unisagrado.
